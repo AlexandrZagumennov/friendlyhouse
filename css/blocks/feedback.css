@@ -1,0 +1,39 @@
+.feedback {
+	padding-top: 174px;
+	padding-bottom: 160px;
+	background-color: #fff;
+}
+
+.feedback__container {
+	max-width: 780px;
+	background: #F2F0F1;
+	border-radius: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.feedback__title {
+	text-align: center;
+	color: #FF8A00;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 30px;
+}
+
+.feedback__text {
+	text-align: center;
+}
+
+.feedback__text_color_orange {
+	color: #FF8A00;
+	margin-bottom: 20px;
+}
+
+.feedback__communication-methods {
+	margin-bottom: 60px;
+}
+
+.feedback__form {
+	max-width: 580px;
+}
