@@ -1,11 +1,6 @@
+@import url(var.css);
 @import url(normalize.css);
-@import url(start.css);
+@import url(global.css);
 @import url(fonts.css);
-@import url(blocks/title.css);
-@import url(blocks/about.css);
-@import url(blocks/help.css);
-@import url(blocks/ol.css);
-@import url(blocks/subtitle.css);
-@import url(blocks/feedback.css);
-@import url(blocks/communication-methods.css);
-@import url(blocks/form.css);
+/* Подключение стилей блоков */
+@import url(blocks/header.css);

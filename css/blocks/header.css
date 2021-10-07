@@ -1,0 +1,38 @@
+.header {
+	padding-top: 21px;
+	padding-bottom: 27px;
+}
+
+.header__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__menu {
+	width: 40px;
+	height: 21px;
+	background: url(../../img/header/menu.svg) no-repeat;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.header__menu:hover {
+	background: url(../../img/header/menu-hover.svg) no-repeat;
+}
+
+.header__menu:active{
+	background: url(../../img/header/menu-click.svg) no-repeat;
+}
+
+.header__logo {
+	cursor: pointer;
+}
+
+.header__phone {
+	width: 215px;
+	text-align: right;
+	background: url(../../img/header/call.svg) no-repeat 0 50%;
+	font-weight: 550;
+}
+
