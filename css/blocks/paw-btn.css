@@ -1,0 +1,21 @@
+.paw-btn {
+	display: block;
+	width: 180px;
+	height: 155px;
+	font-weight: 550;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--color-1, #FF8A00);
+	transition: all 0.3s ease;
+}
+
+.paw-btn__img {
+	display: block;
+	margin: 0 auto 10px auto;
+}
+
+.paw-btn:hover {
+	transform: scale(0.9);
+}

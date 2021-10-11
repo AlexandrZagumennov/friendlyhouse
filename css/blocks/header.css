@@ -10,6 +10,7 @@
 }
 
 .header__menu {
+	display: block;
 	width: 40px;
 	height: 21px;
 	background: url(../../img/header/menu.svg) no-repeat;
@@ -26,6 +27,8 @@
 }
 
 .header__logo {
+	display: block;
+	width: 355px;
 	cursor: pointer;
 }
 
@@ -34,5 +37,10 @@
 	text-align: right;
 	background: url(../../img/header/call.svg) no-repeat 0 50%;
 	font-weight: 550;
+	transition: all 0.3s ease;
+}
+
+.header__phone:hover {
+	color: var(--color-1, #FF8A00);
 }
 

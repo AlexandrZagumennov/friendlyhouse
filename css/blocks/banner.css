@@ -1,0 +1,101 @@
+.banner {
+	margin-bottom: 90px;
+}
+
+.banner__row {
+	display: flex;
+	gap: 20px;
+}
+
+.banner__row-item_left {
+	width: 880px;
+	height: 580px;
+	padding-top: 137px;
+	position: relative;
+}
+
+.banner__row-item_left::after {
+	content: " ";
+	display: block;
+	width: 580px;
+	height: 580px;
+	position: absolute;
+	top: 0;
+	left: 300px;
+	z-index: -1;
+	background: url(../../img/banner/dog-sara.png) no-repeat;
+}
+
+.banner__title {
+	display: block;
+	width: 376px;
+	font-family: Comfortaa;
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 60px;
+	margin-bottom: 81px;
+}
+
+.banner__title span {
+	font-weight: normal;
+	font-size: 60px;
+	line-height: 60px;
+	color: var(--color-1, #FF8A00)
+}
+
+.banner__btn {
+	margin-left: 100px;
+}
+
+.banner__row-item_right {
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap, 30px)
+}
+
+.banner__row-item-elem {
+	width: 180px;
+	height: 80px;
+	font-size: 20px;
+	line-height: 26px;
+	transition: border 0.3s ease;
+	cursor: pointer;
+}
+
+.banner__row-item-elem:hover {
+	border: 1px solid var(--color-1, #FF8A00);
+}
+
+.banner__row-item-elem:active {
+	transition: all 0.3s ease;
+	color: var(--color-1, #FF8A00);
+}
+
+.banner__row-item-elem h3 {
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 26px;
+	padding-left: 100px;
+	padding-top: 30px;
+}
+
+.banner__row-item-elem_boris {
+	background: url(../../img/banner/cat-boris.png) no-repeat;
+}
+
+.banner__row-item-elem_lui {
+	background: url(../../img/banner/dog-lui.png) no-repeat;
+}
+
+.banner__row-item-elem_peter {
+	background: url(../../img/banner/rabbit-peter.png) no-repeat;
+}
+
+.banner__row-item-elem_kenney {
+	background: url(../../img/banner/cat-canney.png) no-repeat;
+}
+
+

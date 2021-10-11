@@ -6,3 +6,7 @@
 	--color-4: #F2F0F1;
 	--main-font-size: 20px;
 }
+
+.banner {
+	--gap: 30px;
+}
