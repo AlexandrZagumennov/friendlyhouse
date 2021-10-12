@@ -28,7 +28,7 @@
 	margin-bottom: 40px;
 }
 
-.adout__media-content {
+.about__media {
 	width: 152px;
 	height: 29px;
 	margin-left: auto;
@@ -42,7 +42,7 @@
 	transition: all 0.3s ease;
 }
 
-.adout__media-content:hover {
+.about__media:hover {
 	transform: scale(0.9);
 }
 

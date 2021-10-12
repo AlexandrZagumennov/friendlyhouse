@@ -3,7 +3,7 @@
 	background: var(--color-4, #F2F0F1);
 	border-radius: 20px;	
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 140px;
 }
 
 .form__container {
@@ -108,25 +108,12 @@
 	display: block;
 	width: 80px;
 	height: 90px;
-	margin-left: auto;
+	background: url(../../img/form/form-btn.png) no-repeat top;
 	transition: all 0.3s ease;
 	padding: 0;
+	padding-top: 74px;
 	border: none;
-}
-
-.form__btn:hover {
-	transform: scale(0.9);
-}
-
-.form__btn-image {
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 3px;
-}
-
-.form__btn-text {
-	display: block;
-	margin: 0 auto;
+	float: right;
 	font-style: normal;
 	font-weight: 550;
 	font-size: 12px;
@@ -135,3 +122,8 @@
 	text-transform: uppercase;
 	color: var(--color-1, #FF8A00);
 }
+
+.form__btn:hover {
+	transform: scale(0.9);
+}
+

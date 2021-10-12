@@ -66,33 +66,10 @@
 	width: 380px;
 }
 
-.help__image-container {
+.help__image-container_finance {
+	background: url(../../img/help/finance-group.png) no-repeat;
 	width: 580px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.help__image-container-row {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-
-.help__image-container-row_left {
-	width: 180px;
-}
-
-.help__image-container-row_right{
-	width: 380px;
-}
-
-.help__image {
-	display: block;
-	transition: all 0.3s ease;
-}
-
-.help__image:hover {
-	transform: scale(1.1);
+	height: 298px;
 }
 
 .help__subtitle_volonteer {
@@ -106,13 +83,10 @@
 	gap: 20px;
 }
 
-.help__volonteer-image {
-	display: block;
-	transition: all 0.3s ease;
-}
-
-.help__volonteer-image:hover {
-	transform: scale(1.1);
+.help__image-container_volonteer {
+	background: url(../../img/help/help-girl-and-dog.png) no-repeat;
+	width: 580px;
+	height: 349px;
 }
 
 .help__volonteer-text-container {
@@ -144,19 +118,10 @@
 	font-weight: 550;
 }
 
-.help__guard-img-col {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-
-.help__guard-image {
-	display: block;
-	transition: all 0.3s ease;
-}
-
-.help__guard-image:hover {
-	transform: scale(1.1);
+.help__image-container_guard {
+	background: url(../../img/help/guard-group.png) no-repeat;
+	width: 580px;
+	height: 382px;
 }
 
 .help__btn  {
