@@ -61,6 +61,10 @@
 	line-height: 26px;
 	transition: border 0.3s ease;
 	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
 }
 
 .banner__row-item-elem:hover {
@@ -73,29 +77,14 @@
 }
 
 .banner__row-item-elem h3 {
+	display: block;
+	width: 80px;
 	font-family: HelveticaNeueCyr;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 20px;
 	line-height: 26px;
-	padding-left: 100px;
-	padding-top: 30px;
 }
 
-.banner__row-item-elem_boris {
-	background: url(../../img/banner/cat-boris.png) no-repeat;
-}
-
-.banner__row-item-elem_lui {
-	background: url(../../img/banner/dog-lui.png) no-repeat;
-}
-
-.banner__row-item-elem_peter {
-	background: url(../../img/banner/rabbit-peter.png) no-repeat;
-}
-
-.banner__row-item-elem_kenney {
-	background: url(../../img/banner/cat-canney.png) no-repeat;
-}
 
 
