@@ -15,6 +15,7 @@
 	<link rel="preload" href="fonts/Comfortaa/Comfortaalight.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/Comfortaa/Comfortaa.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/Comfortaa/Comfortaabold.woff2" as="font" type="font/woff2" crossorigin>
+	<script defer src="js/main.js"></script>
 </head>
 
 <body>
@@ -34,26 +35,31 @@
 			<div class="container">
 				<div class="banner__row">
 					<div class="banner__row-item banner__row-item_left">
-						<h2 class="banner__title"><span class="banner__subtitle">Сара ждёт,</span> когда найдётся <br> её
+						<h2 class="banner__title" id = "banner__title"><span class="banner__subtitle">Сара ждёт,<br> </span> когда найдётся её	<br>
 							человек</h2>
 						<a href="#" class="banner__btn paw-btn">жми на лапу, чтобы помочь!</a>
 					</div>
+					<div class="banner__row-item banner__row-item_center"></div>
 					<div class="banner__row-item banner__row-item_right">
-						<div class="banner__row-item-elem">
-							<img src="./img/banner/cat-boris.png" alt="Изображение кота Бориса" width="80" height="80">
+						<div class="banner__row-item-elem" id = "cat-boris">
+							<img src="img/banner/cat-boris-small.png" alt="Изображение кота Бориса" width="80" height="80">
 							<h3>Борис</h3>
 						</div>
-						<div class="banner__row-item-elem">
-							<img src="./img/banner/dog-lui.png" alt="Изображение собаки Луи" width="80" height="80">
+						<div class="banner__row-item-elem" id = "dog-lui">
+							<img src="img/banner/dog-lui-small.png" alt="Изображение собаки Луи" width="80" height="80">
 							<h3>Луи</h3>
 						</div>
-						<div class="banner__row-item-elem">
-							<img src="./img/banner/rabbit-peter.png" alt="Изображение кролика Питера" width="80" height="80">
+						<div class="banner__row-item-elem" id = "rabbit-peter">
+							<img src="img/banner/rabbit-peter-small.png"  alt="Изображение кролика Питера" width="80" height="80">
 							<h3>Питер</h3>
 						</div>
-						<div class="banner__row-item-elem">
-							<img src="./img/banner/cat-canney.png" alt="Изображение кота Кенни" width="80" height="80">
+						<div class="banner__row-item-elem" id = "cat-canne">
+							<img src="img/banner/cat-canney-small.png"  alt="Изображение кота Кенни" width="80" height="80">
 							<h3>Кенни</h3>
+						</div>
+						<div class="banner__row-item-elem banner__hide" id = "dog-sara">
+							<img src="img/banner/dog-sara-small.png" alt="Изображение собаки Сары" width="70" height="70">
+							<h3>Сара</h3>
 						</div>
 					</div>
 				</div>

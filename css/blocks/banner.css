@@ -5,30 +5,29 @@
 .banner__row {
 	display: flex;
 	gap: 20px;
+	position: relative;
 }
 
 .banner__row-item_left {
 	width: 880px;
 	height: 580px;
 	padding-top: 137px;
-	position: relative;
 }
 
-.banner__row-item_left::after {
-	content: " ";
-	display: block;
+.banner__row-item_center {
 	width: 580px;
 	height: 580px;
 	position: absolute;
 	top: 0;
 	left: 300px;
 	z-index: -1;
-	background: url(../../img/banner/dog-sara.png) no-repeat;
+	background-image: url(../../img/banner/dog-sara-big.png);
+	background-repeat: no-repeat;
 }
 
 .banner__title {
 	display: block;
-	width: 376px;
+	width: 450px;
 	font-family: Comfortaa;
 	font-weight: 300;
 	font-size: 40px;
@@ -86,5 +85,8 @@
 	line-height: 26px;
 }
 
+.banner__hide{
+	display: none;
+}
 
 
