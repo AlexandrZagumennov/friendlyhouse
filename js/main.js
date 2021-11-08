@@ -82,3 +82,55 @@ rabbitPeter.addEventListener('click', changePeter);
 catCanney.addEventListener('click', changeCanney);
 dogSara.addEventListener('click', changeSara);
 
+//POPUP
+$(document).ready(function($) {
+	$('.popup__open').click(function() {
+		$('.popup__fade').fadeIn(500);
+		$('html').addClass('popup__no-scroll');
+		return false;
+	});	
+	
+	$('.popup__close').click(function() {
+		$(this).parents('.popup__fade').fadeOut(300);
+		$('html').removeClass('popup__no-scroll');
+		return false;
+	});		
+
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.popup__fade').fadeOut(300);
+			$('html').removeClass('popup__no-scroll');
+		}
+	});
+	
+	$('.popup__fade').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut(300);
+			$('html').removeClass('popup__no-scroll');	
+		}
+	});	
+});
+
+// Отправка формы
+$('.form').submit(function (e) {
+	e.preventDefault();
+	$.ajax({
+		url: 'https://jsonplaceholder.typicode.com/todos',
+		type: 'POST',
+		data: $(this).serialize(),
+		success(data) {
+			$('.form__title').text('Спасибо, Ваша заявка принята. Номер заявки ' + data.id)
+			$('.form').trigger('reset');
+		},
+		error() {
+			$('.form__title').text('Что-то пошло не так. Попробуйте позже.')
+		}
+	})
+	
+});
+
+// Бургер - меню
+$('.header__menu').on('click', function() {
+	$('.header__navigation').toggle('header__hide-nav')
+});

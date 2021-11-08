@@ -1,0 +1,25 @@
+.popup__fade {
+	display: none;
+}
+.popup__fade:before {
+	content: '';
+	background: #000;
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	opacity: 0.67;
+	z-index: 9999;
+}
+.popup {
+	position: fixed;
+	top: 127px;
+	left: 25%;
+	z-index: 99999;
+	opacity: 1;	
+}
+
+.popup__no-scroll {
+	overflow-y: hidden; 
+}

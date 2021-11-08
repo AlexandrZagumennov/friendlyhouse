@@ -15,7 +15,6 @@
 	<link rel="preload" href="fonts/Comfortaa/Comfortaalight.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/Comfortaa/Comfortaa.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/Comfortaa/Comfortaabold.woff2" as="font" type="font/woff2" crossorigin>
-	<script defer src="js/main.js"></script>
 </head>
 
 <body>
@@ -24,7 +23,27 @@
 			<div class="container">
 				<div class="header__row">
 					<h1 class="visually-hidden">Friendly House</h1>
-					<div class="header__menu"></div>
+					<div class="header__menu">
+						<nav class="header__navigation header__hide-nav">
+							<ul class="header__list">
+								<li class="header__list-item">
+									<a href="#" class="header__list-link">О приюте</a>
+								</li>
+								<li class="header__list-item">
+									<a href="#" class="header__list-link">Наши проекты</a>
+								</li>
+								<li class="header__list-item">
+									<a href="#" class="header__list-link">Как ты можешь помочь нам?</a>
+								</li>
+								<li class="header__list-item">
+									<a href="#" class="header__list-link">Наши питомцы</a>
+								</li>
+								<li class="header__list-item">
+									<a href="#" class="header__list-link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
 					<img src="img/header/logo.svg" class="header__logo" alt="Логотип">
 					<a href="tel:+78493003957" class="header__phone">8 (849) 300 - 39 -57</a>
 				</div>
@@ -37,7 +56,7 @@
 					<div class="banner__row-item banner__row-item_left">
 						<h2 class="banner__title" id = "banner__title"><span class="banner__subtitle">Сара ждёт,<br> </span> когда найдётся её	<br>
 							человек</h2>
-						<a href="#" class="banner__btn paw-btn">жми на лапу, чтобы помочь!</a>
+						<a href="#" class="banner__btn paw-btn popup__open">жми на лапу, чтобы помочь!</a>
 					</div>
 					<div class="banner__row-item banner__row-item_center"></div>
 					<div class="banner__row-item banner__row-item_right">
@@ -147,12 +166,12 @@
 					</li>
 				</ol>
 	
-				<a href="#" class="help__btn paw-btn">жми на лапу, чтобы помочь!</a>
+				<a href="#" class="help__btn paw-btn popup__open">жми на лапу, чтобы помочь!</a>
 			</div>
 		</section>
 	
 		<section class="feedback">
-			 <form action="#" method="post" class="feedback__form form">
+			<form action="#" method="post" class="feedback__form form">
 				<div class="form__container">
 					<h2 class="form__title">Ты можешь помочь нам</h2>
 					<p class="form__text">
@@ -169,20 +188,54 @@
 					<div class="form__input-row">
 						<div class="form__input-item">
 							<label for="input-phone" class="form__label">Номер телефона</label>
-							<input type="tel" name="phone" id="input-phone" class="form__input">
+							<input type="tel" name="phone" id="section-form-input-phone" class="form__input">
 						</div>
 						<div class="form__input-item">
 							<label for="input-email" class="form__label">E-mail</label>
-							<input type="email" name="email" id="input-email" class="form__input">
+							<input type="email" name="email" id="section-form-input-email" class="form__input">
 						</div>
 					</div>
 					<button class="form__btn">
 						отправить
 					</button>
 				</div>
-			 </form>
+			</form>
 		</section>
+		<div class="popup__fade">
+			<form action="#" method="post" class="feedback__form form popup">
+				<a href="#" class="form__close popup__close"></a>
+				<div class="form__container">
+					<h2 class="form__title">Ты можешь помочь нам</h2>
+					<p class="form__text">
+						Хочешь забрать питомца, стать волонтером, или опекуном?
+					</p>
+					<p class="form__text form__text_colored">Свяжись с нами</p>
+					<div class="form__communication-methods">
+						<a href="tel:+78493003957" class="form__phone">8 (849) 300 - 39 -57</a>
+						<a href="mailto:friendlyhouse@gmail.com"  class="form__email">FriendlyHouse@gmail.com</a>
+					</div>
+					<p class="form__text form__text_callback">
+						Или оставь свои контакты и мы сами свяжемся с тобой!
+					</p>
+					<div class="form__input-row">
+						<div class="form__input-item">
+							<label for="input-phone" class="form__label">Номер телефона</label>
+							<input type="tel" name="phone" id="popup-input-phone" class="form__input">
+						</div>
+						<div class="form__input-item">
+							<label for="input-email" class="form__label">E-mail</label>
+							<input type="email" name="email" id="popup-input-email" class="form__input">
+						</div>
+					</div>
+					<button class="form__btn">
+						отправить
+					</button>
+				</div>
+			</form>
+		</div>
 	</main>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>

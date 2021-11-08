@@ -127,3 +127,24 @@
 	transform: scale(0.9);
 }
 
+.form__close:hover {
+	transform: scale(0.7);
+	transition: all 0.3s ease-in;
+}
+
+.form__close:before, .form__close:after {
+	position: absolute;
+	left: 15px;
+	content: ' ';
+	height: 29px;
+	width: 2px;
+	background-color: #282626;
+}
+
+.form__close:before {
+	transform: rotate(45deg);
+}
+
+.form__close:after {
+	transform: rotate(-45deg);
+}

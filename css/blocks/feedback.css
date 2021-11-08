@@ -5,4 +5,14 @@
 
 .feedback__form {
 	margin: 0 auto;
+	position: relative;
 }
+
+.form__close {
+	position: absolute;
+	right: 32px;
+	top: 32px;
+	width: 29px;
+	height: 32px;
+}
+

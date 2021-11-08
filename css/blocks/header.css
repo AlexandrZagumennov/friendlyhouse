@@ -1,6 +1,7 @@
 .header {
 	padding-top: 21px;
 	padding-bottom: 27px;
+	position: relative;
 }
 
 .header__row {
@@ -16,6 +17,7 @@
 	background: url(../../img/header/menu.svg) no-repeat;
 	cursor: pointer;
 	transition: all 0.3s ease;
+	position: relative;
 }
 
 .header__menu:hover {
@@ -44,3 +46,48 @@
 	color: var(--color-1, #FF8A00);
 }
 
+.header__navigation {
+	min-width: 394px;
+	max-height: 394px;
+	font-weight: 550;
+	font-size: 20px;
+	line-height: 30px;
+	padding: 70px 40px 50px 20px; 
+	border-bottom: 10px solid #FF8A00;
+	background-color: #F2F0F1;
+	position: absolute;
+	z-index: 20;
+	top: 60px;
+	left: 0;
+	position: relative;
+}
+
+.header__navigation::before {
+	content: '';
+	width: 52px; 
+	height: 27px; 
+	background: url(../../img/header/corner.png) no-repeat;
+	position: absolute;
+	top: -27px;
+	left: 0;
+	overflow: hidden;
+}
+
+.header__list-item {
+	padding-bottom: 15px;
+	padding-left: 19px;
+}
+
+.header__list-item:not(:last-child) {
+	border-bottom: 1px solid #FF8A00;
+	margin-bottom: 15px;
+	transition: all 0.3s ease;
+}
+
+.header__list-item:hover{
+	color:#FF8A00;
+}
+
+.header__hide-nav {
+	display: none;
+}
