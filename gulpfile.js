@@ -1,5 +1,6 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
+import cssImport from 'gulp-cssimport';
 import gulpCssimport from 'gulp-cssimport';
 import del from 'del';
 
@@ -26,7 +27,7 @@ export const js = () => gulp
 export const copy = () => gulp
 	.src([
 		'src/fonts/**/*',
-		'src/img/**/**/*'
+		'src/img/**/*'
 	], {
 		base: 'src'
 	})
