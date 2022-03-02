@@ -12,14 +12,14 @@ html {
 body {
 	min-width: 320px;
 	min-height: 100vh;
-	font-family: var(--main-font-family, HelveticaNeueCyr);
-	font-size: var(--main-font-size, 20px);
+	font-family: $main-font-family;
+	font-size: $main-font-size;
 	font-weight: 300;
 	font-style: normal;
 	letter-spacing: normal;
 	line-height: 30px;
-	background-color: var(--color-3, #ffffff);
-	color: var(--color-2, #282626);
+	background-color: $color-3;
+	color: $color-2;
 }
 
 img {

@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-	"deploy": "gh-pages -d build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alexandr Zagumennov",
   "license": "ISC",
@@ -14,6 +13,8 @@
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
-    "gulp-cssimport": "^7.0.0"
+    "gulp-cssimport": "^7.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.9"
   }
 }

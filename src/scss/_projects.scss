@@ -23,32 +23,37 @@
 	width: 100%;
 	min-height: 180px;
 	padding: 0 0 0 300px;
-	background-position: left top;
-	background-size: 280px 180px;
-	background-repeat: no-repeat;
-	transition: all .3s ease;
+	background: {
+		position: left top;
+		size: 280px 180px;
+		repeat: no-repeat;
+	};
+
+	transition: outline .3s ease;
+	outline: none;
 	cursor: pointer;
-}
 
-.projects__list-item:hover,
-.projects__list-item:active {
-	outline: 1px solid var(--color-1);
-}
+	&:hover,
+	&:active {
+		@extend %outlineFF8A00;
+	}
 
-.projects__list-item_animal-house {
-	background-image: url(../img/projects/l-1.png);
-}
+	&_animal-house {
+		background-image: url(../img/projects/l-1.png);
+	}
 
-.projects__list-item_little-fashionistas {
-	background-image: url(../img/projects/l-2.png);
-}
+	&_little-fashionistas {
+		background-image: url(../img/projects/l-2.png);
+	}
 
-.projects__list-item_play-with-me {
-	background-image: url(../img/projects/l-3.png);
-}
+	&_play-with-me {
+		background-image: url(../img/projects/l-3.png);
+	}
 
-.projects__list-item_best-photo {
-	background-image: url(../img/projects/l-4.png);
+	&_best-photo {
+		background-image: url(../img/projects/l-4.png);
+	}
+	
 }
 
 .projects__list-link {
@@ -96,19 +101,19 @@
 	font-weight: 550;
 	font-size: 20px;
 	line-height: 26px;
-	color: var(--color-1);
+	color: $color-1;
 	background-image: url(../img/projects/arrow.png);
 	background-position: right center;
 	background-repeat: no-repeat;
 	background-size: 25px 16px;
-}
 
-.projects__link_focus-project {
-	margin-left: auto;
-}
+	&_focus-project {
+		margin-left: auto;
+	}
 
-.projects__link_see-everything {
-	display: none;
+	&_see-everything {
+		display: none;
+	}
 }
 
 .projects__right-container-top {
@@ -122,19 +127,19 @@
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	padding: 293px 10px 15px 10px; 
 	transition: all .3s ease;
+
+	&:hover,
+	&:active {
+		transform: scale(0.97);
+	}
 }
 
 .projects__focus-project-title {
 	font-weight: 550;
 	font-size: 30px;
 	line-height: 40px;
-	color: var(--color-3);
+	color: $color-3;
 	margin: 0;
-}
-
-.projects__right-container-top:hover,
-.projects__right-container-top:active {
-	transform: scale(0.97);
 }
 
 .projects__right-container-bottom {
@@ -170,59 +175,59 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	transition: all .3s ease;
-}
 
-.projects__more-list-item_m1 {
-	background-image: url(../img/projects/more/m1.png);
-}
+	&:hover,
+	&:active {
+		transform: translateY(-5px);
+	}
 
-.projects__more-list-item_m2 {
-	background-image: url(../img/projects/more/m2.png);
-}
+	&_m1 {
+		background-image: url(../img/projects/more/m1.png);
+	}
 
-.projects__more-list-item_m3 {
-	background-image: url(../img/projects/more/m3.png);
-}
+	&_m2 {
+		background-image: url(../img/projects/more/m2.png);
+	}
 
-.projects__more-list-item_m4 {
-	background-image: url(../img/projects/more/m4.png);
-}
+	&_m3 {
+		background-image: url(../img/projects/more/m3.png);
+	}
 
-.projects__more-list-item_m5 {
-	background-image: url(../img/projects/more/m5.png);
-}
+	&_m4 {
+		background-image: url(../img/projects/more/m4.png);
+	}
 
-.projects__more-list-item_m6 {
-	background-image: url(../img/projects/more/m6.png);
-}
+	&_m5 {
+		background-image: url(../img/projects/more/m5.png);
+	}
 
-.projects__more-list-item_m7 {
-	background-image: url(../img/projects/more/m7.png);
-}
+	&_m6 {
+		background-image: url(../img/projects/more/m6.png);
+	}
 
-.projects__more-list-item_m8 {
-	background-image: url(../img/projects/more/m8.png);
-}
+	&_m7 {
+		background-image: url(../img/projects/more/m7.png);
+	}
 
-.projects__more-list-item_m9 {
-	background-image: url(../img/projects/more/m9.png);
-}
+	&_m8 {
+		background-image: url(../img/projects/more/m8.png);
+	}
 
-.projects__more-list-item_m10 {
-	background-image: url(../img/projects/more/m10.png);
-}
+	&_m9 {
+		background-image: url(../img/projects/more/m9.png);
+	}
 
-.projects__more-list-item_m11 {
-	background-image: url(../img/projects/more/m11.png);
-}
+	&_m10 {
+		background-image: url(../img/projects/more/m10.png);
+	}
 
-.projects__more-list-item_m12 {
-	background-image: url(../img/projects/more/m12.png);
-}
+	&_m11 {
+		background-image: url(../img/projects/more/m11.png);
+	}
 
-.projects__more-list-item:hover,
-.projects__more-list-item:active {
-	transform: translateY(-5px);
+	&_m12 {
+		background-image: url(../img/projects/more/m12.png);
+	}
 }
 
 .projects__more-link {
@@ -243,6 +248,14 @@
 		min-height: 130px;
 		padding: 0 0 0 220px;
 		background-size: 200px 130px;
+
+		&_m8,
+		&_m9,
+		&_m10,
+		&_m11,
+		&_m12 {
+			display: none;
+		}
 	}
 
 	.projects__title {
@@ -290,15 +303,6 @@
 		margin-bottom: 23px;
 	}
 
-	.projects__more-list-item_m7,
-	.projects__more-list-item_m8,
-	.projects__more-list-item_m9,
-	.projects__more-list-item_m10,
-	.projects__more-list-item_m11,
-	.projects__more-list-item_m12 {
-		display: none;
-	}
-
 	.projects__link_see-everything {
 		display: block;
 		width: 145px;
@@ -306,10 +310,10 @@
 		cursor: pointer;
 		margin-left: auto;
 		transition: all .3s ease;
-	}
 
-	.projects__link_see-everything:hover {
-		outline: 1px solid var(--color-1);
+		&:hover {
+			outline: 1px solid $color-1;
+		}
 	}
 }
 
@@ -347,6 +351,10 @@
 		width: 115px;
 		font-size: 14px;
 		line-height: 20px;
+
+		&_see-everything {
+			width: 120px;
+		}
 	}
 
 	.projects__right-container-top {
@@ -382,10 +390,6 @@
 		width: 60px;
 		height: 52px;
 	}
-
-	.projects__link_see-everything {
-		width: 120px;
-	}
 }
 
 @media (max-width: 700px) {
@@ -416,6 +420,11 @@
 		width: 100%;
 		justify-self: center;
 		align-self: center;
+
+		&_m5,
+		&_m6 {
+			display: none;
+		}
 	}
 
 	.projects__right-container-top,
@@ -434,11 +443,6 @@
 		grid-template-rows: repeat(1, 1fr);
 		gap: 10px;
 	}
-
-	.projects__more-list-item_m5,
-	.projects__more-list-item_m6 {
-		display: none;
-	}
 }
 
 @media (max-width: 480px) {
@@ -447,22 +451,22 @@
 		min-height: 134px;
 		padding: 0 0 0 140px;
 		background-size: 130px 134px;
-	}
 
-	.projects__list-item_animal-house {
-		background-image: url(../img/projects/mini/l-1.png);
-	}
-	
-	.projects__list-item_little-fashionistas {
-		background-image: url(../img/projects/mini/l-2.png);
-	}
-	
-	.projects__list-item_play-with-me {
-		background-image: url(../img/projects/mini/l-3.png);
-	}
-	
-	.projects__list-item_best-photo {
-		background-image: url(../img/projects/mini/l-4.png);
+		&_animal-house {
+			background-image: url(../img/projects/mini/l-1.png);
+		}
+
+		&_little-fashionistas {
+			background-image: url(../img/projects/mini/l-2.png);
+		}
+
+		&_play-with-me {
+			background-image: url(../img/projects/mini/l-3.png);
+		}
+
+		&_best-photo {
+			background-image: url(../img/projects/mini/l-4.png);
+		}
 	}
 
 	.projects__title {

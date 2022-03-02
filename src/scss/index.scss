@@ -1,0 +1,9 @@
+@import 'var';
+@import 'templates';
+@import 'mixins';
+@import 'normalize';
+@import 'global';
+@import 'fonts';
+
+/* Подключение стилей блоков */
+@import 'projects';
