@@ -248,14 +248,6 @@
 		min-height: 130px;
 		padding: 0 0 0 220px;
 		background-size: 200px 130px;
-
-		&_m8,
-		&_m9,
-		&_m10,
-		&_m11,
-		&_m12 {
-			display: none;
-		}
 	}
 
 	.projects__title {
@@ -275,6 +267,19 @@
 		font-size: 18px;
 		line-height: 24px;
 		padding-top: 4px;
+
+		&_see-everything {
+			display: block;
+			width: 145px;
+			height: 29px;
+			cursor: pointer;
+			margin-left: auto;
+			transition: all .3s ease;
+	
+			&:hover {
+				outline: 1px solid $color-1;
+			}
+		}
 	}
 
 	.projects__right-container-top {
@@ -294,7 +299,7 @@
 	}
 
 	.projects__more-container {
-		min-height: 160px;;
+		min-height: 160px;
 	}
 
 	.projects__more-list {
@@ -303,16 +308,14 @@
 		margin-bottom: 23px;
 	}
 
-	.projects__link_see-everything {
-		display: block;
-		width: 145px;
-		height: 29px;
-		cursor: pointer;
-		margin-left: auto;
-		transition: all .3s ease;
-
-		&:hover {
-			outline: 1px solid $color-1;
+	.projects__more-list-item {
+		&_m7,
+		&_m8,
+		&_m9,
+		&_m10,
+		&_m11,
+		&_m12 {
+			display: none;
 		}
 	}
 }
