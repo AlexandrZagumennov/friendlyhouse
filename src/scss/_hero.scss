@@ -1,0 +1,96 @@
+.hero {
+	padding: 0;
+}
+
+.hero__wrapper {
+	@extend %flex;
+	min-height: 580px;
+	@include bg-full ('../img/hero/dog-sara-big.png');
+	background-size: 580px 580px;
+
+
+	border: 1px solid black;
+}
+
+.hero__col-left {
+	padding: 135px 0 115px 0;
+	max-width: 480px;
+}
+
+.hero__slogan {
+	font-family: Comfortaa;
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 60px;
+}
+
+.hero__slogan-name {
+	font-size: 60px;
+	color: $color-1;
+}
+
+.hero__button {
+
+}
+
+
+.hero__col-right {
+	max-width: 300px;
+
+}
+
+.hero__list {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.hero__item {
+
+}
+
+.hero__btn {
+	display: block;
+	width: 200px;
+	height: 80px;
+	padding-left: 120px;
+	background-color: transparent;
+	outline: none;
+	border:none;
+	transition: all .3s ease;
+
+	background: {
+		size: 80px 80px;
+		repeat: no-repeat;
+		position: left;
+	};
+
+	&_sara{
+		background-image: url(../img/hero/dog-sara-small.png);
+	}
+
+	&_boris{
+		background-image: url(../img/hero/cat-boris-small.png);
+	}
+
+	&_lui{
+		background-image: url(../img/hero/dog-lui-small.png);
+	}
+
+	&_peter{
+		background-image: url(../img/hero/rabbit-peter-small.png);
+	}
+
+	&_canney{
+		background-image: url(../img/hero/cat-canney-small.png);
+	}
+
+	&:hover {
+		@extend %outlineFF8A00;
+	}
+}
+
+.hero__active-tab {
+	display: none;
+}
+

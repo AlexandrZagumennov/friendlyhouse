@@ -1,9 +1,9 @@
 @charset "UTF-8";
-.projects__list-item:hover, .projects__list-item:active {
+.projects__list-item:hover, .projects__list-item:active, .hero__btn:hover {
   outline: 1px solid #FF8A00;
 }
 
-.navigation__list {
+.hero__wrapper, .navigation__list {
   display: flex;
   justify-content: space-between;
 }
@@ -776,6 +776,79 @@ section {
     line-height: 20px;
   }
 }
+.hero {
+  padding: 0;
+}
+
+.hero__wrapper {
+  min-height: 580px;
+  background-image: url("../img/hero/dog-sara-big.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 580px 580px;
+  border: 1px solid black;
+}
+
+.hero__col-left {
+  padding: 135px 0 115px 0;
+  max-width: 480px;
+}
+
+.hero__slogan {
+  font-family: Comfortaa;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.hero__slogan-name {
+  font-size: 60px;
+  color: #FF8A00;
+}
+
+.hero__col-right {
+  max-width: 300px;
+}
+
+.hero__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero__btn {
+  display: block;
+  width: 200px;
+  height: 80px;
+  padding-left: 120px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.hero__btn_sara {
+  background-image: url(../img/hero/dog-sara-small.png);
+}
+.hero__btn_boris {
+  background-image: url(../img/hero/cat-boris-small.png);
+}
+.hero__btn_lui {
+  background-image: url(../img/hero/dog-lui-small.png);
+}
+.hero__btn_peter {
+  background-image: url(../img/hero/rabbit-peter-small.png);
+}
+.hero__btn_canney {
+  background-image: url(../img/hero/cat-canney-small.png);
+}
+.hero__active-tab {
+  display: none;
+}
+
 .projects__main-container {
   display: grid;
   grid-template-columns: 680px 380px;
