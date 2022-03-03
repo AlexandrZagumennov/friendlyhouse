@@ -112,8 +112,8 @@ section {
 	}
 
 	.container {
-		max-width: calc(708px + 2 * 30px);
-		padding: 0 30px;
+		max-width: calc(700px + 2 * 20px);
+		padding: 0 20px;
 	}
 
 	.section-title {
@@ -123,14 +123,14 @@ section {
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 740px) {
 	section {
 		padding: 40px 0; 
 	}
 
 	.container {
-		max-width: 530px;
-		padding: 0 25px;
+		max-width: 700px;
+		padding: 0 20px;
 	}
 
 	.section-title {
@@ -143,5 +143,6 @@ section {
 @media (max-width: 480px) {
 	.container {
 		max-width: none;
+		padding: 0 25px;
 	}
 }

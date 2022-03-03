@@ -1,0 +1,117 @@
+.header__wrapper {
+	min-height: 120px;
+	@extend %fullflex;
+	position: relative;
+}
+
+.header__phone {
+	display: block;
+	width: 215px;
+	height: 30px;
+	padding-left: 38px;
+	font-weight: 550;
+	font-size: 20px;
+	line-height: 30px;
+	position: relative;
+
+	&_mobile {
+		display: none;
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: 12.5%;
+		left: 0;
+		@include bg-full('../img/header/call.svg');
+	}
+}
+
+.header__navigation {
+	display: none;
+
+	&.active {
+		display: block;
+		position: absolute;
+		top:120px;
+		left: 40px;
+		z-index: 20;
+	}
+}
+
+@media (max-width: 1200px) {
+	.header__logo {
+		width: 300px;
+		height: 59px;
+	}
+
+	.header__phone {
+		width: 194px;
+		height: 24px;
+		padding-left: 34px;
+		font-size: 18px;
+		line-height: 24px;
+
+		&::before {
+			width: 18px;
+			height: 18px;
+			top: 12.5%;
+		}
+	}
+}
+ 
+@media (max-width: 1000px) {
+	.header__phone {
+		display: none;
+
+		&::before {
+			top: 25%;
+		}
+
+		&_mobile {
+			display: block;
+			height: 46px;
+			padding: 11px 0 11px 34px;
+			font-size: 18px;
+			line-height: 24px;
+			margin-left: 39px;
+			margin-bottom: 33px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.header__wrapper {
+		min-height: 63px;
+	}
+
+	.header__logo {
+		width: 161px;
+		height: 32px;
+	}
+
+	.header__navigation {
+	
+		&.active {
+			width: 100%;
+			top: 63px;
+			left: 0;
+		}
+	}
+
+	.header__phone {
+		&_mobile {
+			font-size: 14px;
+			line-height: 20px;
+			height: 32px;
+			padding: 6px 0 6px 31px;
+			font-size: 14px;
+			line-height: 20px;
+			margin-left: 10px;
+			margin-bottom: 26px;
+		}
+	}
+}

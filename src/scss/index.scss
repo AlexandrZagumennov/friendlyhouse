@@ -6,5 +6,10 @@
 @import 'fonts';
 
 /* Подключение стилей блоков */
+@import 'header';
+@import 'burger';
+@import 'navigation';
+
+
 @import 'projects';
 @import 'pets';
