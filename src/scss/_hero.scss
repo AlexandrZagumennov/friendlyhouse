@@ -22,6 +22,7 @@
 	font-weight: 300;
 	font-size: 40px;
 	line-height: 60px;
+	margin-bottom: 81px;
 }
 
 .hero__slogan-name {
@@ -29,14 +30,34 @@
 	color: $color-1;
 }
 
-.hero__button {
+.hero__modal-button {
+	display: block;
+	width: 180px;
+	height: 155px;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $color-1;
+	border:none;
+	outline: none;
+	padding-top: 111px;
+	margin-left: 100px;
+	@include bg-full('../img/hero/paw-1.png');
+	background-size: 111px 101px;
+	background-position: top center;
+	background-color: transparent;
+	transition: all .3s ease;
 
+	&:hover {
+		@extend %outlineFF8A00;
+	}
 }
 
 
 .hero__col-right {
-	max-width: 300px;
-
+	width: 300px;
+	padding: 100px 0 70px 0;
 }
 
 .hero__list {

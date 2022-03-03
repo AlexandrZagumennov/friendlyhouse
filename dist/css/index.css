@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.projects__list-item:hover, .projects__list-item:active, .hero__btn:hover {
+.projects__list-item:hover, .projects__list-item:active, .hero__btn:hover, .hero__modal-button:hover {
   outline: 1px solid #FF8A00;
 }
 
@@ -800,6 +800,7 @@ section {
   font-weight: 300;
   font-size: 40px;
   line-height: 60px;
+  margin-bottom: 81px;
 }
 
 .hero__slogan-name {
@@ -807,8 +808,31 @@ section {
   color: #FF8A00;
 }
 
+.hero__modal-button {
+  display: block;
+  width: 180px;
+  height: 155px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FF8A00;
+  border: none;
+  outline: none;
+  padding-top: 111px;
+  margin-left: 100px;
+  background-image: url("../img/hero/paw-1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 111px 101px;
+  background-position: top center;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
 .hero__col-right {
-  max-width: 300px;
+  width: 300px;
+  padding: 100px 0 70px 0;
 }
 
 .hero__list {
