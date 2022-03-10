@@ -29,7 +29,7 @@ const heroList = document.querySelector('.hero__list');
 const tabsOptions = [
 	{
 		name: 'Сара',
-		sloganName: 'Сара ждёт',
+		sloganName: 'Сара ждёт,',
 		sloganDescription: 'когда найдётся её человек',
 		image: '../img/hero/dog-sara-big.png'
 	},
