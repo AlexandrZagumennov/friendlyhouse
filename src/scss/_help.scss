@@ -1,6 +1,12 @@
+.help {
+	padding-top: 0;
+	padding-bottom: 140px;
+}
+
 .help__form {
 	max-width: 780px;
 	min-height: 562px;
+	margin: 0 auto;
 	padding: 50px 100px;
 	border-radius: 20px;
 	background-color: $color-4;
@@ -146,6 +152,10 @@
 
 
 @media (max-width: 1200px) {
+	.help {
+		padding-bottom: 120px;
+	}
+
 	.help__form {
 		max-width: 680px;
 		min-height: 486px;
@@ -218,6 +228,10 @@
 }
 
 @media (max-width: 1000px) {
+	.help {
+		padding-bottom: 100px;
+	}
+
 	.help__form {
 		max-width: 540px;
 		min-height: 440px;
@@ -258,6 +272,10 @@
 }
 
 @media (max-width: 700px) {
+	.help {
+		padding-bottom: 70px;
+	}
+
 	.help__form {
 		max-width: 270px;
 		min-height: 513px;

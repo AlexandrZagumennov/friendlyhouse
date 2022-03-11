@@ -88,7 +88,6 @@ tabs.forEach((tab, index) => {
 	})
 });
 
-changeContent(0);
 
 /* Табы / END */
 
