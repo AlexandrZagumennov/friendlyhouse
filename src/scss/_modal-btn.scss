@@ -1,0 +1,46 @@
+.modal-btn {
+	display: block;
+	width: 180px;
+	height: 155px;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $color-1;
+	border:none;
+	outline: none;
+	padding-top: 111px;
+	margin: 0;
+	@include bg-full('../img/hero/paw-1.png');
+	background-size: 111px 101px;
+	background-position: top center;
+	background-color: transparent;
+	transition: all .3s ease;
+
+	&:hover {
+		@extend %outlineFF8A00;
+	}
+}
+
+@media (max-width: 1200px) {
+	.modal-btn {
+		width: 148px;
+		height: 126px;
+		font-size: 12px;
+		line-height: 18px;
+		padding: 90px 0 0 0;
+		background-size: 83px 80px;
+	}
+}
+
+@media (max-width: 700px) {
+	.modal-btn{
+		width: 84px;
+		height: 78px;
+		margin: 0 auto;
+		font-size: 8px;
+		line-height: 12px;
+		padding-top: 54px;
+		background-size: 50px 50px;
+	}
+}

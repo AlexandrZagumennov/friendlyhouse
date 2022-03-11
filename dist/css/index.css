@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.projects__list-item:hover, .projects__list-item:active, .hero__btn:hover, .hero__modal-button:hover {
+.projects__list-item:hover, .projects__list-item:active, .help__btn:hover, .modal-btn:hover, .hero__btn:hover {
   outline: 1px solid #FF8A00;
 }
 
@@ -8,7 +8,7 @@
   justify-content: space-between;
 }
 
-.header__wrapper {
+.help__input-wrapper, .help__contacts-wrapper, .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -777,7 +777,7 @@ section {
   }
 }
 .hero {
-  padding: 0;
+  padding-top: 0;
 }
 
 .hero__wrapper {
@@ -823,28 +823,6 @@ section {
   color: #FF8A00;
 }
 
-.hero__modal-button {
-  display: block;
-  width: 180px;
-  height: 155px;
-  font-size: 14px;
-  line-height: 22px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FF8A00;
-  border: none;
-  outline: none;
-  padding-top: 111px;
-  margin: 0;
-  background-image: url("../img/hero/paw-1.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 111px 101px;
-  background-position: top center;
-  background-color: transparent;
-  transition: all 0.3s ease;
-}
 .hero__list {
   display: flex;
   flex-direction: column;
@@ -912,15 +890,6 @@ section {
   .hero__slogan-name {
     font-size: 44px;
     line-height: 54px;
-  }
-
-  .hero__modal-button {
-    width: 148px;
-    height: 126px;
-    font-size: 12px;
-    line-height: 18px;
-    padding: 90px 0 0 0;
-    background-size: 83px 80px;
   }
 
   .hero__list {
@@ -1026,8 +995,81 @@ section {
     font-size: 26px;
     line-height: 44px;
   }
+}
+.modal__form {
+  position: relative;
+}
 
-  .hero__modal-button {
+.modal__close {
+  width: 22px;
+  height: 22px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background-image: url("../img/help/close.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.modal__close:hover {
+  background-image: url(../img/help/close-hover.svg);
+}
+.modal__close:active {
+  background-image: url(../img/help/close-hover.svg);
+}
+
+@media (max-width: 1000px) {
+  .modal__close {
+    top: 17px;
+    right: 21px;
+  }
+}
+@media (max-width: 700px) {
+  .modal__close {
+    width: 16px;
+    height: 16px;
+    top: 8px;
+    right: 11px;
+  }
+}
+.modal-btn {
+  display: block;
+  width: 180px;
+  height: 155px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FF8A00;
+  border: none;
+  outline: none;
+  padding-top: 111px;
+  margin: 0;
+  background-image: url("../img/hero/paw-1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 111px 101px;
+  background-position: top center;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1200px) {
+  .modal-btn {
+    width: 148px;
+    height: 126px;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 90px 0 0 0;
+    background-size: 83px 80px;
+  }
+}
+@media (max-width: 700px) {
+  .modal-btn {
     width: 84px;
     height: 78px;
     margin: 0 auto;
@@ -1035,6 +1077,302 @@ section {
     line-height: 12px;
     padding-top: 54px;
     background-size: 50px 50px;
+  }
+}
+.help__form {
+  max-width: 780px;
+  min-height: 562px;
+  padding: 50px 100px;
+  border-radius: 20px;
+  background-color: #F2F0F1;
+}
+
+.help__title {
+  font-family: "Comfortaa";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: #FF8A00;
+  margin-bottom: 30px;
+}
+
+.help__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.help__text-span {
+  font-weight: 550;
+  color: #FF8A00;
+}
+
+.help__contacts-wrapper {
+  max-width: 543px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.help__phone {
+  display: block;
+  width: 215px;
+  height: 30px;
+  padding-left: 38px;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+}
+.help__phone::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 12.5%;
+  left: 0;
+  background-image: url("../img/header/call.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.help__email {
+  display: block;
+  width: 283px;
+  height: 30px;
+  padding-left: 36px;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+}
+.help__email::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 12.5%;
+  left: 0;
+  background-image: url("../img/help/mail.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.help__input-wrapper {
+  max-width: 580px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+}
+
+.help__label-wrapper {
+  width: 280px;
+  min-height: 54px;
+}
+
+.help__label {
+  display: block;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.help__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  padding: 8px 0 8px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.help__input:focus {
+  outline: 1px solid #282626;
+}
+.help__input:hover {
+  outline: 1px solid #CBCBCB;
+}
+
+.help__btn {
+  display: block;
+  width: 80px;
+  height: 90px;
+  border: none;
+  outline: none;
+  margin: 0;
+  margin-left: auto;
+  padding-top: 74px;
+  font-weight: 550;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FF8A00;
+  background-image: url("../img/help/paw-1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 66px 57px;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1200px) {
+  .help__form {
+    max-width: 680px;
+    min-height: 486px;
+    padding: 50px 93px;
+    border-radius: 18px;
+  }
+
+  .help__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .help__text-container {
+    margin: 0 auto;
+    max-width: 380px;
+  }
+
+  .help__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .help__contacts-wrapper {
+    max-width: 494px;
+    margin-bottom: 40px;
+  }
+
+  .help__phone {
+    width: 194px;
+    height: 24px;
+    padding-left: 34px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .help__email {
+    width: 255px;
+    height: 25px;
+    padding-left: 34px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .help__email:before {
+    top: 0;
+  }
+
+  .help__input-wrapper {
+    max-width: 420px;
+    margin-bottom: 19px;
+  }
+
+  .help__label-wrapper {
+    width: 200px;
+    min-height: 49px;
+  }
+
+  .help__label {
+    font-size: 8px;
+    line-height: 10px;
+    margin-bottom: 4px;
+  }
+
+  .help__input {
+    height: 35px;
+    border: none;
+    padding: 4px 0 4px 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .help__form {
+    max-width: 540px;
+    min-height: 440px;
+    padding: 40px 60px;
+  }
+
+  .help__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .help__text-container {
+    max-width: 340px;
+  }
+
+  .help__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .help__contacts-wrapper {
+    max-width: 405px;
+    margin-bottom: 30px;
+  }
+
+  .help__phone,
+.help__email {
+    width: 158px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 3px;
+  }
+
+  .help__email {
+    width: 206px;
+  }
+}
+@media (max-width: 700px) {
+  .help__form {
+    max-width: 270px;
+    min-height: 513px;
+    padding: 30px 29px;
+  }
+
+  .help__title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 14px;
+  }
+
+  .help__text-container {
+    max-width: 212px;
+  }
+
+  .help__text {
+    margin-bottom: 14px;
+  }
+
+  .help__contacts-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+  }
+
+  .help__input-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .help__btn {
+    width: 61px;
+    height: 73px;
+    margin: 0 auto;
+    padding-top: 61px;
+    font-size: 8px;
+    line-height: 12px;
+    background-size: 52px 45px;
   }
 }
 .projects__main-container {

@@ -67,7 +67,7 @@
 					</div>
 
 					<div class="hero__btn-wrapper">
-						<button class="hero__modal-button">Жми на лапку, чтобы помочь!</button>
+						<button class="hero__modal-button modal-btn">Жми на лапку, чтобы помочь!</button>
 					</div>
 
 					<div class="hero__list-wrapper">
@@ -239,6 +239,41 @@
 			</div>
 		</section>-->
 	</main>
+
+	<div class="modal__overlay">
+		<form action="https://jsonplaceholder.typicode.com/posts" class="modal__form help__form" method="post">
+			<button class="modal__close"></button>
+
+			<h3 class="modal__title help__title ">Ты можешь помочь нам!</h3>
+
+			<div class="modal__text-container help__text-container">
+				<p class="modal__text help__text">Хочешь забрать питомца, стать волонтером, или опекуном?
+					<span class="modal__text-span help__text-span">Свяжись с нами!</span> 
+				</p>
+			</div>
+
+			<div class="modal__contacts-wrapper help__contacts-wrapper">
+				<a href="tel:+78493003957" class="modal__phone help__phone">8 (849) 300 - 39 -57</a>
+				<a href="mailto:FriendlyHouse@gmail.com" class="modal__email help__email">FriendlyHouse@gmail.com</a>
+			</div>
+
+			<p class="modal__text help__text">Или оставь свои контакты и мы сами свяжемся с тобой!</p>
+
+			<div class="modal__input-wrapper help__input-wrapper">
+				<div class="help__label-wrapper">
+					<label for="user-tel" class="help__label modal__label">Номер телефона</label>
+					<input type="tel" name="user-tel" id="user-tel" class="help__input modal__input">
+				</div>
+	
+				<div class="help__label-wrapper">
+					<label for="user-email" class="help__label modal__label">E-mail</label>
+					<input type="email" name="user-email" id="user-email" class="help__input modal__input">
+				</div>
+			</div>
+
+			<button type="submit" class="modal__btn help__btn">Отправить</button>
+		</form>
+	</div>
  
 </body>
 

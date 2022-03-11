@@ -1,0 +1,45 @@
+.modal__overlay {
+
+}
+
+.modal__form {
+	position: relative;
+}
+
+.modal__close {
+	width: 22px;
+	height: 22px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	transition: all .3s ease;
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	@include bg-full ('../img/help/close.svg');
+
+	&:hover {
+		background-image: url(../img/help/close-hover.svg);
+	}
+
+	&:active {
+		background-image: url(../img/help/close-hover.svg);
+	}
+}
+
+@media (max-width: 1000px) {
+	.modal__close {
+		top: 17px;
+		right: 21px;
+	}
+}
+
+@media (max-width: 700px) {
+	.modal__close {
+		width: 16px;
+		height: 16px;
+		top: 8px;
+		right: 11px;
+	}
+
+}
