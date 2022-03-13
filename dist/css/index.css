@@ -3,12 +3,12 @@
   outline: 1px solid #FF8A00;
 }
 
-.navigation__list {
+.footer__bottom-wrapper, .navigation__list {
   display: flex;
   justify-content: space-between;
 }
 
-.help__input-wrapper, .help__contacts-wrapper, .header__wrapper {
+.footer__social-list, .footer__top-wrapper, .help__input-wrapper, .help__contacts-wrapper, .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2160,4 +2160,180 @@ section {
     font-size: 18px;
     line-height: 24px;
   }
+}
+.footer {
+  background-color: #282626;
+  padding: 90px 0;
+  color: #ffffff;
+}
+
+.footer__top-wrapper {
+  margin-bottom: 87px;
+}
+
+.footer__map {
+  width: 680px;
+  min-height: 360px;
+  background-image: url("../img/footer/map.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__title {
+  font-family: "Comfortaa";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0 0 8px;
+}
+
+.footer__adress-wrapper {
+  margin-bottom: 30px;
+}
+
+.footer__description {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+}
+.footer__description_logo {
+  margin-bottom: 22px;
+}
+
+.footer__adress {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer__phone {
+  display: block;
+  width: 215px;
+  height: 30px;
+  padding-left: 38px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.footer__phone::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/footer/call.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 12.5%;
+  left: 0;
+}
+
+.footer__email {
+  display: block;
+  width: 283px;
+  height: 30px;
+  padding-left: 38px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.footer__email::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/footer/email.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 12.5%;
+  left: 0;
+}
+
+.footer__logo {
+  margin-bottom: 8px;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer__social-list {
+  max-width: 277px;
+  min-height: 40px;
+  gap: 39px;
+}
+
+.footer__social-item {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+.footer__social-item_inst {
+  background-image: url("../img/footer/social/inst.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer__social-item_inst:hover {
+  background-image: url("../img/footer/social/inst-hover.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer__social-item_vk {
+  background-image: url("../img/footer/social/vk.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer__social-item_vk:hover {
+  background-image: url("../img/footer/social/vk-hover.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer__social-item_fb {
+  background-image: url("../img/footer/social/fb.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer__social-item_fb:hover {
+  background-image: url("../img/footer/social/fb-hover.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer__social-item_telegram {
+  background-image: url("../img/footer/social/telegram.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer__social-item_telegram:hover {
+  background-image: url("../img/footer/social/telegram-hover.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__copywright-description,
+.footer__copywright-email {
+  font-size: 14px;
+  line-height: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer__copywright-description {
+  margin-bottom: 2px;
+}
+
+.footer__copywright-email:hover {
+  color: #FF8A00;
 }
