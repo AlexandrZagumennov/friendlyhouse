@@ -166,12 +166,20 @@ function init() {
 			iconImageHref: '../img/footer/mark.svg',
 			// Размеры метки.
 			iconImageSize: [39, 59],
-			// Смещение левого верхнего угла иконки относительно
-			// её "ножки" (точки привязки).
-			iconImageOffset: [-5, -38]
 		});
 
 	myMap.geoObjects.add(mark);
+
+	myMap.behaviors.disable('scrollZoom'); // запрещаем зум карты колёсиком мыши
+	myMap.behaviors.disable('drag'); // запрещаем скролл свайпом
+
+	myMap.controls.remove('geolocationControl'); // удаляем геолокация (Ваше местонахождение)
+	myMap.controls.remove('searchControl'); // удаляем поиск
+	myMap.controls.remove('trafficControl'); // удаляем контроль трафика
+	myMap.controls.remove('typeSelector'); // удаляем тип
+	myMap.controls.remove('fullscreenControl'); // удаляем переход в полноэкранный режим
+	myMap.controls.remove('zoomControl'); // удаляем контрол зуммирования
+	myMap.controls.remove('rulerCOntrol'); // удаляем контрол правил
 };
 
 /* Яндекс карта / END  */
