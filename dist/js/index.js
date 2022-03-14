@@ -143,3 +143,35 @@ tabs.forEach((tab, index) => {
 	});
 
 /* Модальное окно / END  */
+
+
+/* Яндекс карта */
+ymaps.ready(init);
+function init() {
+	const myMap = new ymaps.Map("map", {
+		center: [55.849206, 37.375674],
+		zoom: 13
+	});
+
+	const mark = new ymaps.Placemark([55.849206, 37.375674], 
+		{
+			hintContent: 'Friendly House приют для животных',
+			balloonContent: '103929, Москва, Пятницкое шоссе, дом 28'
+		},
+		{
+			// Опции.
+			// Необходимо указать данный тип макета.
+			iconLayout: 'default#image',
+			// Своё изображение иконки метки.
+			iconImageHref: '../img/footer/mark.svg',
+			// Размеры метки.
+			iconImageSize: [39, 59],
+			// Смещение левого верхнего угла иконки относительно
+			// её "ножки" (точки привязки).
+			iconImageOffset: [-5, -38]
+		});
+
+	myMap.geoObjects.add(mark);
+};
+
+/* Яндекс карта / END  */
