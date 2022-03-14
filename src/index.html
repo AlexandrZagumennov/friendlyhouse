@@ -18,18 +18,21 @@
 	<link rel="preload" href="fonts/Comfortaa/Comfortaa.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/Comfortaa/Comfortaabold.woff2" as="font" type="font/woff2" crossorigin>
 
-	<script defer src="https://api-maps.yandex.ru/2.1/?apikey=bee43767-4522-4aa7-9dac-f13bf1c89f4a&lang=ru_RU" type="text/javascript"></script>
+	<script defer src="https://api-maps.yandex.ru/2.1/?apikey=bee43767-4522-4aa7-9dac-f13bf1c89f4a&lang=ru_RU"
+		type="text/javascript"></script>
 	<script defer src="js/index.js"></script>
 </head>
 
 <body>
 	<header class="header">
 		<div class="container">
+			<h1 class="visually-hidden">Friendly House - приют для животных</h1>
 			<div class="header__wrapper">
 				<button class="header__burger burger">
 					<span></span>
 				</button>
-				<img src="img/header/logo.svg" alt="Изображение логотипа приюта для животных Frienfly House" class="header__logo" width="355" height="72">
+				<img src="img/header/logo.svg" alt="Изображение логотипа приюта для животных Frienfly House"
+					class="header__logo" width="355" height="72">
 				<a href="tel:+78493003957" class="header__phone">8 (849) 300 - 39 -57</a>
 				<nav class="header__navigation navigation">
 					<ul class="navigation__list">
@@ -102,9 +105,7 @@
 			</div>
 		</section>
 
-
-
-		<!--<section class="projects">
+		<section class="projects">
 			<div class="container">
 				<h3 class="section-title">Наши проекты</h3>
 				<div class="projects__main-container">
@@ -208,9 +209,77 @@
 					</div>
 				</div>
 			</div>
-		</section>-->
+		</section>
 
-		<!--<section class="pets">
+		<section class="ways-to-help">
+			<div class="container">
+				<h3 class="section-title ways-to-help__title">Как ты можешь нам помочь?</h3>
+
+				<ol class="ways-to-help__list">
+					<li class="ways-to-help__item ways-to-help__item_finance">
+						
+						<div class="ways-to-help__content-wrapper">
+							<h4 class="ways-to-help__item-title">Финансово</h4>
+							<p class="ways-to-help__text">Мы будем рады любым пожертвованиям.
+								Деньги пойдут на корм, лечение и уход,
+								а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
+						</div>
+
+						<div class="ways-to-help__image-wrapper ways-to-help__image-wrapper_first">
+							<div class="ways-to-help__first-ill"></div>
+							<div class="ways-to-help__second-ill"></div>
+							<div class="ways-to-help__third-ill"></div>
+						</div>
+					</li>
+
+					<li class="ways-to-help__item ways-to-help__item_volunteer">
+						<h4 class="ways-to-help__item-title">Стать волонером</h4>
+
+						<div class="ways-to-help__row-wrapper">
+							<div class="ways-to-help__fouth-ill"></div>
+						
+							<div class="ways-to-help__content-wrapper">
+								<p class="ways-to-help__text">Наш приют "Friendly House" привлекает волонтеров для оказания
+									помощи в самых разных форматах! От финансовой помощи и набирающего популярность
+									интеллектуального волонтерства до помощи руками.</p>
+
+								<p class="ways-to-help__text">Нам всегда нужна помощь с выгулом подопечных, уборкой
+									помещений, привезти в приют корм или медикаменты, помочь с перевозкой животных в
+									клиники, забрать и привезти вещи
+									и много всего другого. Мы всегда рады любой помощи, присоединяйтесь к нашей дружной
+									команде! :).</p>
+							</div>
+
+					</div>
+					</li>
+
+					<li class="ways-to-help__item">
+						<div class="ways-to-help__content-wrapper">
+							<h4 class="ways-to-help__item-title">Стать опекуном</h4>
+
+							<div class="ways-to-help__text-wrapper">
+								<p class="ways-to-help__text"> <span>Хотите друга, но не можете взять домой?
+										Проект опеки - идеальное решение!</span></p>
+	
+								<p class="ways-to-help__text">Взять под опеку животное, у которого еще нет опекуна, – это
+									как завести питомца, о котором всю жизнь мечтал, но не мог себе этого позволить
+									по каким-либо причинам.</p>
+							</div>
+						</div>
+				
+						<div class="ways-to-help__image-wrapper ways-to-help__image-wrapper_third">
+							<div class="ways-to-help__fifth-ill"></div>
+							<div class="ways-to-help__sixth-ill"></div>
+							<div class="ways-to-help__seventh-ill"></div>
+						</div>
+					</li>
+				</ol>
+
+				<button class="ways-to-help__modal-button modal-btn modal__open">Жми на лапку, чтобы помочь!</button>
+			</div>
+		</section>
+
+		<section class="pets">
 			<div class="container">
 				<h3 class="section-title">Наши питомцы</h3>
 				<ul class="pets__list">
@@ -257,43 +326,43 @@
 					</li>
 				</ul>
 			</div>
-		</section>-->
-	
-	<!--<section class="help">
-		<div class="container">
-			<form action="https://jsonplaceholder.typicode.com/posts" class="help__form modal__body" method="post">
-	
-				<h3 class="help__title ">Ты можешь помочь нам!</h3>
-	
-				<div class="help__text-container">
-					<p class="help__text">Хочешь забрать питомца, стать волонтером, или опекуном?
-						<span class="help__text-span">Свяжись с нами!</span> 
-					</p>
-				</div>
-	
-				<div class="help__contacts-wrapper">
-					<a href="tel:+78493003957" class="help__phone">8 (849) 300 - 39 -57</a>
-					<a href="mailto:FriendlyHouse@gmail.com" class="help__email">FriendlyHouse@gmail.com</a>
-				</div>
-	
-				<p class="help__text">Или оставь свои контакты и мы сами свяжемся с тобой!</p>
-	
-				<div class="help__input-wrapper">
-					<div class="help__label-wrapper">
-						<label for="user-tel" class="help__label">Номер телефона</label>
-						<input type="tel" name="user-tel" id="user-tel" class="help__input">
+		</section>
+
+		<section class="help">
+			<div class="container">
+				<form action="https://jsonplaceholder.typicode.com/posts" class="help__form modal__body" method="post">
+		
+					<h3 class="help__title ">Ты можешь помочь нам!</h3>
+		
+					<div class="help__text-container">
+						<p class="help__text">Хочешь забрать питомца, стать волонтером, или опекуном?
+							<span class="help__text-span">Свяжись с нами!</span> 
+						</p>
 					</div>
 		
-					<div class="help__label-wrapper">
-						<label for="user-email" class="help__label">E-mail</label>
-						<input type="email" name="user-email" id="user-email" class="help__input">
+					<div class="help__contacts-wrapper">
+						<a href="tel:+78493003957" class="help__phone">8 (849) 300 - 39 -57</a>
+						<a href="mailto:FriendlyHouse@gmail.com" class="help__email">FriendlyHouse@gmail.com</a>
 					</div>
-				</div>
-	
-				<button type="submit" id="form-order" class="help__btn">Отправить</button>
-			</form>
-		</div>
-	</section>-->
+		
+					<p class="help__text">Или оставь свои контакты и мы сами свяжемся с тобой!</p>
+		
+					<div class="help__input-wrapper">
+						<div class="help__label-wrapper">
+							<label for="user-tel" class="help__label">Номер телефона</label>
+							<input type="tel" name="user-tel" id="user-tel" class="help__input">
+						</div>
+			
+						<div class="help__label-wrapper">
+							<label for="user-email" class="help__label">E-mail</label>
+							<input type="email" name="user-email" id="user-email" class="help__input">
+						</div>
+					</div>
+		
+					<button type="submit" id="form-order" class="help__btn">Отправить</button>
+				</form>
+			</div>
+		</section>
 
 	</main>
 
@@ -359,7 +428,7 @@
 
 			<div class="help__text-container">
 				<p class="help__text">Хочешь забрать питомца, стать волонтером, или опекуном?
-					<span class="help__text-span">Свяжись с нами!</span> 
+					<span class="help__text-span">Свяжись с нами!</span>
 				</p>
 			</div>
 
@@ -375,7 +444,7 @@
 					<label for="user-tel" class="help__label">Номер телефона</label>
 					<input type="tel" name="user-tel" id="user-tel" class="help__input">
 				</div>
-	
+
 				<div class="help__label-wrapper">
 					<label for="user-email" class="help__label">E-mail</label>
 					<input type="email" name="user-email" id="user-email" class="help__input">
@@ -385,7 +454,7 @@
 			<button type="submit" id="form-order" class="help__btn">Отправить</button>
 		</form>
 	</div>
- 
+
 </body>
 
 </html>

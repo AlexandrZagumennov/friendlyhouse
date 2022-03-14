@@ -1,0 +1,165 @@
+.ways-to-help {
+	background-color: $color-4;
+}
+
+.ways-to-help__title {
+	display: block;
+	width: 770px;
+	color: $color-1;
+	margin: 0 auto 50px;
+}
+
+.ways-to-help__list {
+	list-style-type: none;
+	counter-reset: list;
+	margin: 0 0 50px;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.ways-to-help__item-title {
+	font-style: normal;
+	font-weight: 550;
+	font-size: 30px;
+	line-height: 40px;	
+	display: flex;
+	align-items: center;
+	margin: 0;
+	gap: 20px;
+
+	&::before {
+		display:  block;
+		content: counter(list);
+		counter-increment: list;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		background-color: $color-3;
+		font-size: 50px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 50px;
+		line-height: 50px;
+		text-align: center;
+		color: $color-1;
+		padding-top: 18px;
+	}
+}
+
+.ways-to-help__item {
+	@extend %fullflex;
+}
+
+.ways-to-help__item_finance {
+	min-height: 298px;
+}
+
+.ways-to-help__text {
+	display: block;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 30px;
+
+	span {
+		font-weight: 550;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
+
+.ways-to-help__item_finance .ways-to-help__text {
+	padding-left: 100px;
+	max-width: 477px;
+}
+
+.ways-to-help__image-wrapper {
+	max-width: 580px;
+}
+
+.ways-to-help__image-wrapper_first {
+	display: grid;
+	grid-template-columns: 180px 380px;
+	grid-template-rows: repeat(2, 139px);
+	gap: 20px;
+}
+
+.ways-to-help__first-ill {
+	@include bg-full ('../img/ways-to-help/1.png');
+	grid-column: 1 / 2;
+	grid-row: 1 / 2; 
+}
+
+.ways-to-help__second-ill {
+	@include bg-full ('../img/ways-to-help/2.png');
+	grid-column: 1 / 2;
+	grid-row: 2 / 3; 
+}
+
+.ways-to-help__third-ill {
+	@include bg-full ('../img/ways-to-help/3.png');
+	grid-column: 2 / 3;
+	grid-row: 1 / 3; 
+}
+
+.ways-to-help__fouth-ill {
+	width: 580px;
+	height: 349px;
+	@include bg-full ('../img/ways-to-help/4.png');
+}
+
+.ways-to-help__item_volunteer {
+	display: block;
+}
+
+.ways-to-help__row-wrapper {
+	@extend %fullflex; 
+}
+
+.ways-to-help__row-wrapper .ways-to-help__content-wrapper {
+	max-width: 580px;
+}
+
+.ways-to-help__item_volunteer .ways-to-help__item-title {
+	margin-bottom: 30px;
+}
+
+.ways-to-help__text-wrapper {
+	max-width: 580px;
+	padding-left: 100px;
+}
+
+.ways-to-help__image-wrapper_third {
+	width: 580px;
+	height: 382px;
+
+	display: grid;
+	grid-template-columns: repeat(2, 280px);
+	grid-template-rows: repeat(2, 181px);
+	gap: 20px;
+}
+
+.ways-to-help__fifth-ill {
+	@include bg-full ('../img/ways-to-help/5.png');
+	grid-column: 1 / 2;
+	grid-row: 1 / 3; 
+}
+
+.ways-to-help__sixth-ill {
+	@include bg-full ('../img/ways-to-help/6.png');
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+.ways-to-help__seventh-ill {
+	@include bg-full ('../img/ways-to-help/7.png');
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+.ways-to-help__modal-button {
+	margin: 0 auto;
+}
