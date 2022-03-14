@@ -118,7 +118,7 @@ tabs.forEach((tab, index) => {
 	}
 
 	// Модальное окно
-	const modalOpen = document.querySelector('.modal__open'),
+	const modalOpen = document.querySelectorAll('.modal__open'),
 	    //  modalClose = document.querySelector('.modal__close'),
 	      modalOverlay = document.querySelector('.modal__overlay');
 
@@ -131,8 +131,12 @@ tabs.forEach((tab, index) => {
 		modalOverlay.classList.remove('modal__overlay-open');
 		enableScroll();
 	};
-	  
-	modalOpen.addEventListener('click', runModalOpen);
+
+	modalOpen.forEach(item => {
+		item.addEventListener('click', () => {
+			runModalOpen();
+		});
+	})
 	  
 	modalOverlay.addEventListener('click', event => {
 		target = event.target;
