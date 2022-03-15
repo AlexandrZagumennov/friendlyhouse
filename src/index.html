@@ -8,8 +8,6 @@
 	<title>Friendly House</title>
 	<link rel="icon" type="image/svg+xml" href="img/favicon.png">
 
-	<link rel="stylesheet" href="css/index.css">
-
 	<link rel="preload" href="fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff2" as="font" type="font/woff2"
 		crossorigin>
 	<link rel="preload" href="fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff2" as="font" type="font/woff2"
@@ -18,9 +16,22 @@
 	<link rel="preload" href="fonts/Comfortaa/Comfortaa.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/Comfortaa/Comfortaabold.woff2" as="font" type="font/woff2" crossorigin>
 
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const createLink = url => {
+				const link = document.createElement('link');
+				link.rel = 'stylesheet';
+				link.href = url;
+				document.head.append(link);
+			}
+			createLink('css/index.css');
+		})
+	</script>
+
 	<script defer src="https://api-maps.yandex.ru/2.1/?apikey=bee43767-4522-4aa7-9dac-f13bf1c89f4a&lang=ru_RU"
 		type="text/javascript"></script>
-	<script defer src="js/index.js"></script>
+
+	<script defer src="js/index.min.js"></script>
 </head>
 
 <body>
@@ -285,42 +296,66 @@
 				<ul class="pets__list">
 					<li class="pets__item pets__item_item-1">
 						<figure class="pets__figure">
-							<img src="img/pets/twinky-pinkey.png" alt="Изображение морских свинок Твинки и Пинки, 2 месяца" class="pets__img pets__img_1" width="480" height="280">
+							<picture>
+								<source srcset = "img/pets/twinky-pinkey.avif" type="image/avif">
+								<source srcset = "img/pets/twinky-pinkey.webp" type="image/webp">
+								<img loading = "lazy" src="img/pets/twinky-pinkey.png" alt="Изображение морских свинок Твинки и Пинки, 2 месяца" class="pets__img pets__img_1" width="480" height="280">
+							</picture>
 							<figcaption class="pet__figcaption">Твинки и Пинки, 2 месяца</figcaption>
 						</figure>
 					</li> 
 	
 					<li class="pets__item pets__item_item-2">
 						<figure class="pets__figure">
-							<img src="img/pets/murzik.png" alt="Изображение котёнка Мурзика" width="280" height="280" class="pets__img pets__img_2">
+							<picture>
+								<source srcset = "img/pets/murzik.avif" type="image/avif">
+								<source srcset = "img/pets/murzik.webp" type="image/webp">
+								<img loading = "lazy" src="img/pets/murzik.png" alt="Изображение котёнка Мурзика" width="280" height="280" class="pets__img pets__img_2">
+							</picture>
 							<figcaption class="pet__figcaption">Мурзик, 6 месяцев</figcaption>
 						</figure>
 					</li>
 	
 					<li class="pets__item pets__item_item-3">
 						<figure class="pets__figure">
-							<img src="img/pets/misha-richard.png" alt="Изображение кота Миши и пса Ричарда" width="380" height="650" class="pets__img pets__img_3">
+							<picture>
+								<source srcset = "img/pets/misha-richard.avif" type="image/avif">
+								<source srcset = "img/pets/misha-richard.webp" type="image/webp">
+								<img loading = "lazy" src="img/pets/misha-richard.png" alt="Изображение кота Миши и пса Ричарда" width="380" height="650" class="pets__img pets__img_3">
+							</picture>
 							<figcaption class="pet__figcaption">Миша (кот) и Ричард (пёс), 3 года и 5 лет</figcaption>
 						</figure>
 					</li>
 	
 					<li class="pets__item pets__item_item-4">
 						<figure class="pets__figure">
-							<img src="img/pets/jack.png" alt="Изображение собаки по кличке Джек" width="280" height="280" class="pets__img pets__img_4">
+							<picture>
+								<source srcset = "img/pets/jack.avif" type="image/avif">
+								<source srcset = "img/pets/jack.webp" type="image/webp">
+								<img loading = "lazy" src="img/pets/jack.png" alt="Изображение собаки по кличке Джек" width="280" height="280" class="pets__img pets__img_4">
+							</picture>
 							<figcaption class="pet__figcaption">Джек, 1 год</figcaption>
 						</figure>
 					</li>
 	
 					<li class="pets__item pets__item_item-5">
 						<figure class="pets__figure">
-							<img src="img/pets/jerry.png" alt="Изображение морской свинки Джерри" width="280" height="280" class="pets__img pets__img_5">
+							<picture>
+								<source srcset = "img/pets/jerry.avif" type="image/avif">
+								<source srcset = "img/pets/jerry.webp" type="image/webp">
+								<img loading = "lazy" src="img/pets/jerry.png" alt="Изображение морской свинки Джерри" width="280" height="280" class="pets__img pets__img_5">
+							</picture>
 							<figcaption class="pet__figcaption">Джерри, 3 недели</figcaption>
 						</figure>
 					</li>
 	
 					<li class="pets__item pets__item_item-6">
 						<figure class="pets__figure">
-							<img src="img/pets/rockey-senya.png" alt="Изображение попугаев Рокки и Сени" width="180" height="280" class="pets__img pets__img_6">
+							<picture>
+								<source srcset = "img/pets/rockey-senya.avif" type="image/avif">
+								<source srcset = "img/pets/rockey-senya.webp" type="image/webp">
+								<img loading = "lazy" src="img/pets/rockey-senya.png" alt="Изображение попугаев Рокки и Сени" width="180" height="280" class="pets__img pets__img_6">
+							</picture>
 							<figcaption class="pet__figcaption">Рокки и Сеня, 2 и 3 года</figcaption>
 						</figure>
 					</li>
@@ -388,7 +423,7 @@
 
 			<div class="footer__bottom-wrapper">
 				<div class="footer__logo-wrapper">
-					<img src="img/footer/logo.svg" class="footer__logo" alt="Логотип приюта для животных Friendly House" width="357" height="42">
+					<img loading = "lazy" src="img/footer/logo.svg" class="footer__logo" alt="Логотип приюта для животных Friendly House" width="357" height="42">
 					<p class="footer__description ">приют для животных Friendly House® 2011-2021</p>
 				</div>
 
