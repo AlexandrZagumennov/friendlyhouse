@@ -11,11 +11,52 @@ navigation.addEventListener('click', (event) => {
 	const closeNav = event.target.closest('.navigation__link');
 
 	if (closeNav) {
-		headerNavigation.classList.remove('active');
+		navigation.classList.remove('active');
 		burger.classList.remove('active');
 	}
 });
 /* Мобильное меню / END */
+
+/* Отправка формы без перезагрузки страницы */
+$('.help__form').on('submit', function(event) {
+	event.preventDefault();
+
+	$.ajax({
+		url: 'https://jsonplaceholder.typicode.com/posts',
+		method: 'POST',
+		datatype: 'html',
+		data: $('.help__form').serialize(),
+		success: function(data) {
+			console.log(data);
+			$('.help__form').html('Спасибо! Ваша заявка успешно отправлена.');
+			$('.help__btn').hide();
+		}
+	})
+})
+
+/* Отправка формы без перезагрузки страницы / END */
+
+/* Плавный скролл */
+const links = document.querySelectorAll('.navigation__item a');
+
+seamless.polyfill();
+
+links.forEach( element => {
+	element.addEventListener('click', event => {
+		event.preventDefault();
+
+		const id = element.getAttribute('href').substring(1);
+		const section = document.getElementById(id);
+
+		if (section) {
+			seamless.elementScrollIntoView(section, {
+				behavior: 'smooth',
+				block: 'start'
+			})
+		} 
+	})
+});
+/* Плавный скролл / END */
 
 /* Табы */
 const heroWrapper = document.querySelector('.hero__wrapper');
@@ -148,6 +189,8 @@ tabs.forEach((tab, index) => {
 /* Модальное окно / END  */
 
 
+
+
 /* Яндекс карта */
 ymaps.ready(init);
 function init() {
@@ -166,7 +209,7 @@ function init() {
 			// Необходимо указать данный тип макета.
 			iconLayout: 'default#image',
 			// Своё изображение иконки метки.
-			iconImageHref: '../img/footer/mark.svg',
+			iconImageHref: 'img/footer/mark.svg',
 			// Размеры метки.
 			iconImageSize: [39, 59],
 		});

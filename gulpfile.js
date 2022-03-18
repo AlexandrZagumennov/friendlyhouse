@@ -27,7 +27,9 @@ let dev = false;
 const sass = gulpSass(sassPkg);
 
 const allJS = [
+	"src/libs/jquery-3.6.0.min.js",
 	"src/libs/swiper-bundle.min.js",
+	"src/libs/seamless-scroll-polyfill.min.js",
 ];
 
 export const html = () => gulp
