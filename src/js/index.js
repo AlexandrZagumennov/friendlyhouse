@@ -229,3 +229,35 @@ function init() {
 };
 
 /* Яндекс карта / END  */
+
+/* Настройка SWIPER   */
+
+
+	/* Секция PETS */
+	const swiperPets = new Swiper('.swiper-pet', {
+		slidesPerView: 1,
+		speed: 800,
+		loop: true,
+		spaceBetween: 5,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		  },
+		keyboard: {
+			enabled: true,
+			onlyInViewport: false,
+		},
+	});
+
+	const swiperPetsPrev = document.querySelector('.pets__slider-prev')
+	const swiperPetsNext = document.querySelector('.pets__slider-next')
+
+	swiperPetsPrev.addEventListener('click', () => {
+		swiperPets.slidePrev();
+	})
+	swiperPetsNext.addEventListener('click', () => {
+		swiperPets.slideNext();
+	})
+	/* Секция PETS / END  */
+
+/* Настройка SWIPER / END  */

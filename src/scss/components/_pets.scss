@@ -1,3 +1,7 @@
+.pets__slider-wrapper {
+	display: none;
+}
+
 .pets__list {
 	display: grid;
 	grid-template-columns: 280px 180px 80px 180px 380px;
@@ -156,7 +160,163 @@
 		font-size: 18px;
 		line-height: 24px;
 	}
-
-
 }
+
+@media (max-width: 1000px) {
+	.pets__desktop-wrapper {
+		display: none;
+	}
+
+	.pets__slider-wrapper {
+		display: block;
+
+	}
+
+	.pets__slider-list {
+		display: block;
+	}
+
+	.pets__slider-item {
+		width: 540px;
+		height: 410px;
+		margin: 0 auto;
+	}
+
+	.pets__slider-item .pets__figure {
+		height: 410px;
+
+		img {
+			height: 368px;
+			margin-bottom: 18px;	
+		}
+	}
+
+	.pets__img_1{
+		width: 540px;
+	}
+
+	.pets__img_2{
+		width: 459px;
+	}
+
+	.pets__img_3{
+		width: 280px;
+	}
+
+	.pets__img_4{
+		width: 394px;
+	}
+
+	.pets__img_5{
+		width: 295px;
+	}
+
+	.pets__img_6{
+		width: 237px;
+	}
+
+
+	.pets__slider-wrapper.swiper{
+		width: 540px;
+	}
+
+	.pets {
+		position: relative;
+	}
+
+	.pets__slider-navigation {
+		margin: 0 auto;
+		max-width: 700px;
+		height: 54px;
+		top: -259px;
+		position: relative;
+	}
+
+	.pets__slider-prev,
+	.pets__slider-next  {
+		display: block;
+		width: 54px;
+		height: 54px;
+		border: none;
+		background-color: transparent;
+		position: absolute;
+		z-index: 100;
+		transition: all .3s ease;
+	}
+
+	.pets__slider-prev {
+		left: 0;
+		@include bg-full('../img/pets/left.svg');
+	}
+
+	.pets__slider-next {
+		right: 0;
+		@include bg-full('../img/pets/right.svg');
+	}
+}
+
+@media (max-width: 740px) {
+	.pets__title {
+		width: 270px;
+		margin: 0 auto 20px;
+	}
+
+	.pets__slider-wrapper.swiper{
+		width: 270px;
+	}
+
+	.pets__slider-item {
+		width: 270px;
+		height: 214px;
+	}
+
+	.pets__slider-item .pets__figure {
+		height: 214px;
+
+		img {
+			height: 184px;
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 10px;	
+
+		}
+	}
+
+	.pet__figcaption {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.pets__slider-navigation {
+		max-width: 296px;
+		height: 26px;
+		top: -149px;
+	}
+
+	.pets__slider-prev,
+	.pets__slider-next  {
+		width: 26px;
+		height: 26px;
+	}
+
+	.pets__img_1 {
+		width: 270px;
+	}
+	.pets__img_2, 
+	.pets__img_5{
+		width: 80%;
+	}
+
+	.pets__img_3 {
+		width: 60%;
+	}
+	.pets__img_4 {
+		width: 94%;
+	}
+
+	.pets__img_6 {
+		width: 64%
+	}
+}
+
 
