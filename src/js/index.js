@@ -231,7 +231,41 @@ function init() {
 /* Яндекс карта / END  */
 
 /* Настройка SWIPER   */
+	/* Секция WAYS-TO-HELP. Первый слайдер*/
+	const swiperWaysFirst = new Swiper('.swiper-ways-to-help-first', {
+		slidesPerView: 1.5,
+		speed: 800,
+		loop: true,
+		slideToClickedSlide: true,
+		spaceBetween: 10,
+		autoplay: {
+			delay: 1000,
+			disableOnInteraction: false,
+		},
+		keyboard: {
+			enabled: true,
+			onlyInViewport: false,
+		},
+	});
+	/* Секция WAYS-TO-HELP. Первый слайдер /*/
 
+		/* Секция WAYS-TO-HELP. Второй слайдер*/
+		const swiperWaysSecond = new Swiper('.swiper-ways-to-help-second', {
+			slidesPerView: 1.5,
+			speed: 800,
+			loop: true,
+			slideToClickedSlide: true,
+			spaceBetween: 10,
+			autoplay: {
+				delay: 1500,
+				disableOnInteraction: false,
+			},
+			keyboard: {
+				enabled: true,
+				onlyInViewport: false,
+			},
+		});
+		/* Секция WAYS-TO-HELP. Второй слайдер /*/
 
 	/* Секция PETS */
 	const swiperPets = new Swiper('.swiper-pet', {
