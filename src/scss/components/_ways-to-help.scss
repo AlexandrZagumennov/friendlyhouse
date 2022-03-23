@@ -51,11 +51,14 @@
 	}
 }
 
-.ways-to-help__item {
-	@extend %fullflex;
-}
+//.ways-to-help__item {
+//	@extend %fullflex;
+//}
 
 .ways-to-help__item_finance {
+	display: flex;
+	align-items: center;
+	gap: 120px;
 	min-height: 298px;
 }
 
@@ -159,7 +162,9 @@
 }
 
 .ways-to-help__row-wrapper {
-	@extend %fullflex; 
+	display: flex;
+	align-items: center;
+	gap: 20px;
 }
 
 .ways-to-help__row-wrapper .ways-to-help__content-wrapper {
@@ -231,6 +236,12 @@
 	);
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
+}
+
+.ways-to-help__item_guardian {
+	display: flex;
+	align-items: center;
+	gap: 20px;
 }
 
 .ways-to-help__modal-button {
@@ -314,6 +325,12 @@
 		grid-template-columns: repeat(2, 180px);
 		grid-template-rows: repeat(2, 117px);
 		gap: 12px;
+	}
+
+	.ways-to-help__item_finance,
+	.ways-to-help__row-wrapper,
+	.ways-to-help__item_guardian {
+		gap: 20px;
 	}
 }
 
