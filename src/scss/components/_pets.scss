@@ -87,6 +87,10 @@
 	}
 }
 
+.pets__slider-navigation {
+	display: none;
+}
+
 @media (max-width: 1200px) {
 	.pets__list {
 		grid-template-columns: 180px 180px 180px 280px;
@@ -167,12 +171,9 @@
 		display: none;
 	}
 
-	.pets__slider-wrapper {
-		display: block;
-
-	}
-
-	.pets__slider-list {
+	.pets__slider-wrapper,
+	.pets__slider-list, 
+	.pets__slider-navigation {
 		display: block;
 	}
 
